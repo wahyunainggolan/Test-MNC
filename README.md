@@ -13,16 +13,14 @@ git clone https://github.com/wahyunainggolan/Test-MNC.git
 # 1. Test Tahap 1
 Problem Solving code.
 
----
-
-## 1. Go to the Project
+### Go to the Project
 
 ```bash
 cd test-tahap-1
 ```
 ---
 
-## 5. Run the code
+### Run the code
 
 ```bash
 go run soal-1.go
