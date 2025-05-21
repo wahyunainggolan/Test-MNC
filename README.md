@@ -129,6 +129,6 @@ go test ./internal/service/user_service_test.go -v
 
 
 
-## License
+## Created by
 
 Wahyu Adi P Nainggolan
