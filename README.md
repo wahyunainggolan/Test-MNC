@@ -24,6 +24,9 @@ cd test-tahap-1
 
 ```bash
 go run soal-1.go
+go run soal-2.go
+go run soal-3.go
+go run soal-4.go
 ```
 ---
 
