@@ -115,6 +115,20 @@ psql -h localhost -U postgres -d mnc_wallet_db -f migrations/init.sql
 
 ---
 
+---
+
+## 9. Run a specific test file (optional) 
+
+```bash
+go test ./internal/controller/controller_test.go -v
+go test ./internal/service/user_service_test.go -v
+
+```
+
+---
+
+
+
 ## License
 
 Wahyu Adi P Nainggolan
