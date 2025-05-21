@@ -7,9 +7,27 @@
 
 ##  Clone the Project
 ```bash
-https://github.com/wahyunainggolan/Test-MNC.git
+git clone https://github.com/wahyunainggolan/Test-MNC.git
 ```
 
+# 1. Test Tahap 1
+Problem Solving code.
+
+---
+
+## 1. Go to the Project
+
+```bash
+cd test-tahap-1
+```
+---
+
+## 5. Run the code
+
+```bash
+go run soal-1.go
+```
+---
 
 # 2. Test Tahap 2
 
