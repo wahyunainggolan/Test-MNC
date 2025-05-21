@@ -121,8 +121,8 @@ psql -h localhost -U postgres -d mnc_wallet_db -f migrations/init.sql
 
 ```bash
 go test ./internal/controller/controller_test.go -v
+go test ./internal/service/transaction_service_test.go -v
 go test ./internal/service/user_service_test.go -v
-
 ```
 
 ---

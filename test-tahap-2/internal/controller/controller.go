@@ -62,11 +62,17 @@ func (ctrl *Controller) Login(c *gin.Context) {
 	}
 	user, err := ctrl.UserService.GetByPhone(req.PhoneNumber)
 	if err != nil || utils.CheckPIN(user.PIN, req.PIN) != nil {
-		utils.RespondError(c, http.StatusUnauthorized, "Invalid credentials")
+		utils.RespondError(c, http.StatusUnauthorized, "Phone Number and PIN doesn’t match.")
 		return
 	}
 	token, _ := utils.GenerateJWT(user.UserID)
-	utils.RespondSuccess(c, gin.H{"access_token": token})
+	utils.RespondSuccess(
+		c,
+		gin.H{
+			"access_token":  token,
+			"refresh_token": token,
+		},
+	)
 }
 
 func (ctrl *Controller) TopUp(c *gin.Context) {
